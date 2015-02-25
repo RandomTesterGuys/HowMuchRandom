@@ -15,7 +15,7 @@ def calcolaStatisticaTest(dati):
             print n/k
             print (n+1)/k
             
-            if (n/k) <=  valore < ((n+1)/k):
+            if (n/k) <=  float(valore) < ((n+1)/k):
                 occorrenzeCampionarie[n] = occorenzeCampionarie[n] +1
 
     print dati
