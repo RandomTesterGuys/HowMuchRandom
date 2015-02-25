@@ -4,14 +4,8 @@ from __future__ import division
 
 def calcolaStatisticaTest(dati):
     #Dividiamo l'intervallo [0,1] in k segmenti, e contiamo le occorrenze campionarie
-    datip = []
-    for j in range(len(dati)):
-        datip.append(abs(float(dati[j])))
-        #if float(dati[j]) < 0:
-        #    continue
-        #else:
-        #    datip.append(float(dati[j]))
-    dati = datip            
+    for j in range(len(dati)):  #rendiamo positivi i valori negativi
+        dati[j]= abs(float(dati[j]))
     k = 5
     occorrenzeCampionarie = [0]*k
 
