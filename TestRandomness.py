@@ -9,17 +9,23 @@ def calcolaStatisticaTest(dati):
     occorrenzeCampionarie = [0]*k
 
     for valore in dati:
-        print "Valore: " + valore
-
-        for n in range(k):
-            print n/k
-            print (n+1)/k
+        for i in range(k):
             
-            if (n/k) <=  float(valore) < ((n+1)/k):
-                occorrenzeCampionarie[n] += 1
+            if (i/k) <=  float(valore) < ((i+1)/k):
+                occorrenzeCampionarie[i] += 1
 
-    print dati
+    print "OCCORRENZE:"
     print occorrenzeCampionarie
+    
+    sum = 0
+    n = len(dati)
+    for i in range(n):
+        sum += (occorrenzeCampionarie[i]**2)/(n*(1/k))
+    sum -= n
+
+    print "SUM:"
+    print sum
+
 
 if __name__ == "__main__":
     with open('./test.txt') as f:
