@@ -6,10 +6,11 @@ def calcolaStatisticaTest(dati):
     #Dividiamo l'intervallo [0,1] in k segmenti, e contiamo le occorrenze campionarie
     datip = []
     for j in range(len(dati)):
-        if float(dati[j]) < 0:
-            continue
-        else:
-            datip.append(float(dati[j]))
+        datip.append(abs(float(dati[j])))
+        #if float(dati[j]) < 0:
+        #    continue
+        #else:
+        #    datip.append(float(dati[j]))
     dati = datip            
     k = 5
     occorrenzeCampionarie = [0]*k
