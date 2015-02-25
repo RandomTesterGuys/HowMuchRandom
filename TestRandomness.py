@@ -22,7 +22,7 @@ def calcolaStatisticaTest(dati):
     print occorrenzeCampionarie
 
 if __name__ == "__main__":
-    with open('./test.txt') as f:
+    with open('./output.txt') as f:
         lines = f.read().splitlines()
     
     calcolaStatisticaTest(lines)
