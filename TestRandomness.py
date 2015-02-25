@@ -15,14 +15,14 @@ def calcolaStatisticaTest(dati):
             print n/k
             print (n+1)/k
             
-            if (valore >= (n/k) and  valore < ((n+1)/k)):
+            if (n/k) <=  valore < ((n+1)/k):
                 occorrenzeCampionarie[n] = occorenzeCampionarie[n] +1
 
     print dati
     print occorrenzeCampionarie
 
 if __name__ == "__main__":
-    with open('./output.txt') as f:
+    with open('./test.txt') as f:
         lines = f.read().splitlines()
     
     calcolaStatisticaTest(lines)
