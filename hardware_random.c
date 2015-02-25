@@ -8,4 +8,5 @@ int main() {
     {
         fprintf(output, "%f\n", var/9223372036854775808.0);
     }
+    
 }

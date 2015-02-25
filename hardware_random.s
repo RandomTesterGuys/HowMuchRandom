@@ -1,5 +1,6 @@
 //Compile just by using gcc hardware_random.s -o hrnd
-// or whatever name you like... then run! 
+// or whatever name you like... then run!
+//
 
 
 	.section	__TEXT,__text,regular,pure_instructions
