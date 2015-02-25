@@ -6,7 +6,7 @@ def calcolaStatisticaTest(dati):
     #Dividiamo l'intervallo [0,1] in k segmenti, e contiamo le occorrenze campionarie
     for j in range(len(dati)):  #rendiamo positivi i valori negativi
         dati[j]= abs(float(dati[j]))
-    k = 5
+    k = 101
     occorrenzeCampionarie = [0]*k
 
     for valore in dati:
